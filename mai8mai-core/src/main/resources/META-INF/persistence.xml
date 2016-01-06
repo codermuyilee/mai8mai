@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<persistence version="2.0"
+	xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+
+	<persistence-unit name="pps-operation"
+		transaction-type="RESOURCE_LOCAL">
+
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<class>com.mai8mai.dao.model.Goods</class>
+		<exclude-unlisted-classes>false</exclude-unlisted-classes>
+		<shared-cache-mode>ENABLE_SELECTIVE</shared-cache-mode>
+		<validation-mode>NONE</validation-mode>
+		<properties>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+			<property name="javax.persistence.jdbc.user" value="${db.jdbc.username}" />
+			<property name="javax.persistence.jdbc.password" value="${db.jdbc.password}" />
+			<property name="javax.persistence.jdbc.url" value="${db.jdbc.url}" />
+			<!-- eclipselink -->
+			<property name="eclipselink.ddl-generation" value="create-tables" />
+			<property name="eclipselink.orm.throw.exceptions" value="true" />
+			<property name="eclipselink.ddl-generation.output-mode"
+				value="database" />
+			<property name="eclipselink.logging.level" value="FINE" />
+			<property name="eclipselink.show_sql" value="true" />
+			<property name="javax.persistence.lock.timeout" value="5"/>
+			<property name="javax.persistence.query.timeout" value="5"/>
+
+		</properties>
+	</persistence-unit>
+</persistence>

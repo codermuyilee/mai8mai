@@ -15,15 +15,10 @@
     <constant name="struts.devMode" value="false"/>
     <!-- 设置浏览器是否缓存静态内容。默认值为true(生产环境下使用),开发阶段最好关闭  -->
     <constant name="struts.serve.static.browserCache" value="false" />
-    <!-- 指定由spring负责action对象的创建
+    <!-- 指定由spring负责action对象的创建 -->
     <constant name="struts.objectFactory" value="spring" />
-    -->
+
     <!-- 是否开启动态方法调用 -->
     <constant name="struts.enable.DynamicMethodInvocation" value="false"/>
 
-   <!-- <package name="struts2" extends="struts-default">
-        <action name="HelloWorld" class="com.mai8mai.web.action.HelloWorld">
-            <result>/HelloWorld.jsp</result>
-        </action>
-    </package>-->
 </struts>

@@ -1,28 +1,59 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.yl</groupId>
-  <artifactId>mai8mai</artifactId>
-  <version>1.0-SNAPSHOT</version>
-  <modules>
-    <module>mai8bai-web</module>
-  </modules>
-  <packaging>pom</packaging>
+    <groupId>com.mai8mai</groupId>
+    <artifactId>mai8mai</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>mai8bai-web</module>
+        <module>mai8mai-core</module>
+    </modules>
+    <packaging>pom</packaging>
 
-  <name>mai8mai</name>
-  <url>http://maven.apache.org</url>
+    <name>mai8mai</name>
+    <url>http://maven.apache.org</url>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
-
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
+    <properties>
+        <mai8mai.version>1.0</mai8mai.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <env>dev</env>
+    </properties>
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <properties>
+                <env>dev</env>
+            </properties>
+        </profile>
+        <profile>
+            <id>test</id>
+            <properties>
+                <env>test</env>
+            </properties>
+        </profile>
+    </profiles>
+    <build>
+        <filters> <!-- 指定使用的 filter -->
+            <filter>${project.basedir}/../src/main/filters/filter-${env}.properties</filter>
+        </filters>
+        <resources>
+            <resource> <!-- 配置需要被替换的资源文件路径, db.properties 应该在 src/main/resource 目录下 -->
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering> <!-- 是否使用过滤器 -->
+            </resource>
+        </resources>
+    </build>
+    <dependencies>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.0.13</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.13</version>
+        </dependency>
+    </dependencies>
 </project>
