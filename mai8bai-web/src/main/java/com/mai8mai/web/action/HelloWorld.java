@@ -3,9 +3,8 @@ package com.mai8mai.web.action;
 import com.opensymphony.xwork2.ActionSupport;
 import org.apache.struts2.convention.annotation.*;
 
-@ParentPackage("struts-default")
 // 父包
-@Namespace("/helloworld")
+
 @Results( { @Result(name = "success", location = "/msg.jsp"),
         @Result(name = "error", location = "/error.jsp") })
 @ExceptionMappings( { @ExceptionMapping(exception = "java.lange.RuntimeException", result = "error") })
