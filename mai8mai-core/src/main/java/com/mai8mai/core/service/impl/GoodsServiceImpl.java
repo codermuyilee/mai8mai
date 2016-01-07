@@ -1,8 +1,8 @@
-package com.mai8mai.service.impl;
+package com.mai8mai.core.service.impl;
 
-import com.mai8mai.dao.GoodsDao;
-import com.mai8mai.dao.model.Goods;
-import com.mai8mai.service.GoodsService;
+import com.mai8mai.core.dao.GoodsDao;
+import com.mai8mai.core.dao.model.Goods;
+import com.mai8mai.core.service.GoodsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -17,12 +17,22 @@ public class GoodsServiceImpl implements GoodsService {
     @Autowired
     private GoodsDao goodsDao;
 
+    public boolean create(Goods goods) {
+        try {
+            goodsDao.create(goods);
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
     public Goods getGoodsById(Long id) {
-        Goods goods=goodsDao.find(1L);
+        Goods goods=goodsDao.find(id);
         if(goods==null){
             goods=new Goods();
-            goods.setId(1L);
-            goods.setName("hello 6s");
+            goods.setId(id);
+            goods.setName(id+" hello 6s");
             try {
                 goodsDao.create(goods);
             } catch (Exception e) {

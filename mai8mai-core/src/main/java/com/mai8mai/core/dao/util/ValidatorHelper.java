@@ -1,4 +1,4 @@
-package com.mai8mai.dao.util;
+package com.mai8mai.core.dao.util;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

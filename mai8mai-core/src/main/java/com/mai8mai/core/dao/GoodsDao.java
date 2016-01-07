@@ -1,6 +1,6 @@
-package com.mai8mai.dao;
+package com.mai8mai.core.dao;
 
-import com.mai8mai.dao.model.Goods;
+import com.mai8mai.core.dao.model.Goods;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;

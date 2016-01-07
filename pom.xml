@@ -8,6 +8,7 @@
     <modules>
         <module>mai8bai-web</module>
         <module>mai8mai-core</module>
+        <module>mai8mai-spider</module>
     </modules>
     <packaging>pom</packaging>
 

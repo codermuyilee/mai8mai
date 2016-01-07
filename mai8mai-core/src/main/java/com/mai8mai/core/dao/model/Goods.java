@@ -1,4 +1,4 @@
-package com.mai8mai.dao.model;
+package com.mai8mai.core.dao.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

@@ -1,7 +1,7 @@
-package com.mai8mai.dao;
+package com.mai8mai.core.dao;
 
-import com.mai8mai.dao.model.BaseModel;
-import com.mai8mai.dao.util.ValidatorHelper;
+import com.mai8mai.core.dao.model.BaseModel;
+import com.mai8mai.core.dao.util.ValidatorHelper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
