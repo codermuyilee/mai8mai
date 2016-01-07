@@ -3,7 +3,19 @@
     <title>Success</title>
     </haed>
 <body>
-WelCome,${message},you logined!<br>
-<a href="ShowInfo.action">Show Information</a>
+
+  <div>
+      <table>
+          <tr>
+              <td>${goods.name}</td>
+              <td>${goods.gotoBuyUrl}</td>
+          </tr>
+          <tr>
+              <td>${goods.name}</td>
+              <td>${goods.gotoBuyUrl}</td>
+          </tr>
+      </table>
+  </div>
+
 </body>
 </html>

@@ -29,16 +29,6 @@ public class GoodsServiceImpl implements GoodsService {
 
     public Goods getGoodsById(Long id) {
         Goods goods=goodsDao.find(id);
-        if(goods==null){
-            goods=new Goods();
-            goods.setId(id);
-            goods.setName(id+" hello 6s");
-            try {
-                goodsDao.create(goods);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
         return goods;
     }
 

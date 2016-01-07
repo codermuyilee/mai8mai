@@ -6,7 +6,7 @@
     <artifactId>mai8mai</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>mai8bai-web</module>
+        <module>mai8mai-web</module>
         <module>mai8mai-core</module>
         <module>mai8mai-spider</module>
     </modules>

@@ -4,7 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.mai8mai.core.dao.model.Goods;
 import com.mai8mai.core.service.GoodsService;
 import com.mai8mai.core.util.ApplicationContextUtils;
-import com.mai8mai.spider.impl.GuangDuiSpiderProcessor;
+import com.mai8mai.spider.service.impl.GuangDuiSpiderProcessor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

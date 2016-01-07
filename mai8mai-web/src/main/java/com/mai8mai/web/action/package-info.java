@@ -1,6 +1,6 @@
 @ParentPackage("struts-default")
 
-@Namespace("/helloworld")
+@Namespace("/goods")
 package com.mai8mai.web.action;
 
 import org.apache.struts2.convention.annotation.Namespace;

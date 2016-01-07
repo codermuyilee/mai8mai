@@ -8,36 +8,25 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
-// 父包
-
 @Results({@Result(name = "success", location = "/msg.jsp"),
         @Result(name = "error", location = "/error.jsp")})
 @ExceptionMappings({@ExceptionMapping(exception = "java.lange.RuntimeException", result = "error")})
 public class GoodsAction extends ActionSupport {
 
-    final static private Logger logger = LoggerFactory.getLogger(HelloWorld.class);
+    final static private Logger logger = LoggerFactory.getLogger(GoodsAction.class);
 
-    private String message;
-
+    private Goods goods;
+    private Long id;
     @Autowired
     private GoodsService goodsService;
 
     /**
      * @return the message
      */
-    @Action(value = "hello", results = {@Result(name = "success", location = "/HelloWorld.jsp")})
-    public String hello() {
-        Goods goods=goodsService.getGoodsById(1L);
-        message=goods.getName();
-        return "success";
-    }
-
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
+    @Action(value = "home")
+    public String home() {
+        goods=goodsService.getGoodsById(id);
+        return "home";
     }
 
     public GoodsService getGoodsService() {
@@ -46,5 +35,21 @@ public class GoodsAction extends ActionSupport {
 
     public void setGoodsService(GoodsService goodsService) {
         this.goodsService = goodsService;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Goods getGoods() {
+        return goods;
+    }
+
+    public void setGoods(Goods goods) {
+        this.goods = goods;
     }
 }
