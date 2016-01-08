@@ -26,7 +26,7 @@ public class GoodsAction extends ActionSupport {
     @Action(value = "home")
     public String home() {
         goods=goodsService.getGoodsById(id);
-        return "home";
+        return "goods_list";
     }
 
     public GoodsService getGoodsService() {
