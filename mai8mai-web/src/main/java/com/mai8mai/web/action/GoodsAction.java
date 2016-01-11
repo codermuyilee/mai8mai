@@ -1,5 +1,6 @@
 package com.mai8mai.web.action;
 
+import com.mai8mai.core.beans.Page;
 import com.mai8mai.core.dao.model.Goods;
 import com.mai8mai.core.service.GoodsService;
 import com.opensymphony.xwork2.ActionSupport;
@@ -7,6 +8,8 @@ import org.apache.struts2.convention.annotation.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.List;
 
 @Results({@Result(name = "success", location = "/msg.jsp"),
         @Result(name = "error", location = "/error.jsp")})
@@ -17,6 +20,8 @@ public class GoodsAction extends ActionSupport {
 
     private Goods goods;
     private Long id;
+    private Page page=new Page();
+    private List<Goods> goodsList;
     @Autowired
     private GoodsService goodsService;
 
@@ -25,7 +30,8 @@ public class GoodsAction extends ActionSupport {
      */
     @Action(value = "home")
     public String home() {
-        goods=goodsService.getGoodsById(id);
+
+        goodsList=goodsService.getGoodsByPage(page);
         return "goods_list";
     }
 
@@ -51,5 +57,21 @@ public class GoodsAction extends ActionSupport {
 
     public void setGoods(Goods goods) {
         this.goods = goods;
+    }
+
+    public Page getPage() {
+        return page;
+    }
+
+    public void setPage(Page page){
+        this.page=page;
+    }
+
+    public List<Goods> getGoodsList() {
+        return goodsList;
+    }
+
+    public void setGoodsList(List<Goods> goodsList) {
+        this.goodsList = goodsList;
     }
 }

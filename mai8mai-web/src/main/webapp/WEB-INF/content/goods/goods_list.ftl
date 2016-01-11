@@ -160,23 +160,26 @@
 	      </div><!-- .options -->
 	      
 	      <div class="grid_product">
-		     <div class="grid_3 product">
-			    <div class="prev">
-				   <a href="product_page.html"><img src="${contextPath}/images/product_1.png" alt="" title="" /></a>
-			    </div><!-- .prev -->
-			    <h3 class="title">Febreze Air Effects New Zealand Springs</h3>
-			    <div class="cart">
-				   <div class="price">
-					  <div class="vert">
-						 <div class="price_new">$550.00</div>
-						 <div class="price_old">$725.00</div>
-					  </div>
-				   </div>
-				   <a href="#" class="obn"></a>
-				   <a href="#" class="like"></a>
-				   <a href="#" class="bay"></a>
-			    </div><!-- .cart -->
-		     </div><!-- .grid_3 -->
+			  <#list goodsList as goods>
+                  <div class="grid_3 product">
+                      <div class="prev">
+                          <a href="product_page.html"><img src="http://127.0.0.1/fsf.jpg" alt="" title="" /></a>
+                      </div><!-- .prev -->
+                      <h3 class="title">Febreze Air Effects New Zealand Springs</h3>
+                      <div class="cart">
+                          <div class="price">
+                              <div class="vert">
+                                  <div class="price_new">$550.00</div>
+                                  <div class="price_old">$725.00</div>
+                              </div>
+                          </div>
+                          <a href="#" class="obn"></a>
+                          <a href="#" class="like"></a>
+                          <a href="#" class="bay"></a>
+                      </div><!-- .cart -->
+                  </div><!-- .grid_3 -->
+			  </#list>
+
 		     
 		     <div class="grid_3 product">
 			    <img class="sale" src="${contextPath}/images/sale.png" alt="Sale"/>
