@@ -118,7 +118,7 @@
        </div><!-- .sidebar -->
       
        <div id="content" class="grid_9">
-	      <h1 class="page_title">Product List</h1>
+	      <h1 class="page_title">每日精选</h1>
 	      
 	      <div class="options">
 		     <div class="grid-list">

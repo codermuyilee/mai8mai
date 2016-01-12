@@ -2530,6 +2530,11 @@ img.sale{
 	font:normal 13px/18px Bitter, Myriad Pro, Verdana, serif;
 	color:#777;
 	border-bottom: 1px solid #e0e0e0;
+	width:200px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
 }
 .product .cart .price{
 	float: left;

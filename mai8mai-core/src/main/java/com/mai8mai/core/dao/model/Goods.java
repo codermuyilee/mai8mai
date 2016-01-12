@@ -52,6 +52,10 @@ public class Goods extends BaseModel {
      * 更新时间
      */
     private Date updateTime;
+    /**
+     * 当前价格
+     */
+    private Float currentPrice;
 
     @Column(name = "name")
     public String getName() {
@@ -143,5 +147,13 @@ public class Goods extends BaseModel {
 
     public void setUpdateTime(Date updateTime) {
         this.updateTime = updateTime;
+    }
+    @Column(name="current_price")
+    public Float getCurrentPrice() {
+        return currentPrice;
+    }
+
+    public void setCurrentPrice(Float currentPrice) {
+        this.currentPrice = currentPrice;
     }
 }
