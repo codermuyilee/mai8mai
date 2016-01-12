@@ -4,6 +4,8 @@ import com.mai8mai.core.dao.model.Goods;
 import com.mai8mai.spider.service.SpiderProcessor;
 import com.mai8mai.core.util.DateStyle;
 import com.mai8mai.core.util.DateUtil;
+import com.mai8mai.spider.util.Constants;
+import com.mai8mai.spider.util.DownloadResource;
 import org.jsoup.Jsoup;
 import org.jsoup.helper.StringUtil;
 import org.jsoup.nodes.Document;
@@ -52,7 +54,21 @@ public class GuangDuiSpiderProcessor implements SpiderProcessor {
                 //防止新的样式出现
                 if(goods!=null){
                     //商品图片
-                    goods.setPic(element.select("div.imgandbtn div.showpic a img").attr("src"));
+                    String picUrl=element.select("div.imgandbtn div.showpic a img").attr("src");
+
+                    p = Pattern.compile("(.*?)\\.com/(.*?)\\.jpg\\?(.*?)$");
+                    m = p.matcher(picUrl);
+                    while (m.find()){
+                        goods.setPic(m.group(2)+".jpg");
+                        break;
+                    }
+
+                    String [] urlArray=picUrl.split("/");
+                    try {
+                        DownloadResource.download(picUrl, goods.getPic(), Constants.PIC_SAVA_PATH);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
                     //商品来源
                     String source=element.select("div.iteminfoarea div.timeandfrom div.infofrom").text();
                     goods.setSource(source);
