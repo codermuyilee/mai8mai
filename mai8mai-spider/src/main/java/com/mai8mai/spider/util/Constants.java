@@ -7,5 +7,5 @@ package com.mai8mai.spider.util;
  * Time: 11:37
  */
 public class Constants {
-    public  static  final String  PIC_SAVA_PATH="/data/images";
+    public  static  final String  PIC_SAVA_PATH="/data/resource/images";
 }

@@ -43,7 +43,7 @@
                 <artifactId>maven-jetty-plugin</artifactId>
                 <version>6.1.26</version>
                 <configuration>
-                    <contextPath>/mai8mai</contextPath>
+                    <contextPath>/</contextPath>
                     <scanIntervalSeconds>3</scanIntervalSeconds>
                     <connectors>
                         <connector implementation="org.mortbay.jetty.nio.SelectChannelConnector">

@@ -24,7 +24,7 @@ public class Main {
     public static void main(String[] args) {
         GoodsService goodsService= (GoodsService)ApplicationContextUtils.getBean(GoodsService.class);
         SpiderProcessor p = new GuangDuiSpiderProcessor();
-        int pageSize = 2;
+        int pageSize = 10;
         for (int i = 1; i < pageSize; i++) {
             String url = String.format("http://guangdiu.com/index.php?p=%d", i);
             List<Goods> goodsList = p.spider(url);

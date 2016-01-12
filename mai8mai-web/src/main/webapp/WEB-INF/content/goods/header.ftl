@@ -1,4 +1,5 @@
 <#assign contextPath = request.contextPath/>
+<#assign imagePath = "http://mai8mai.com/resource/images" />
 
 <!DOCTYPE HTML>
 <html>
