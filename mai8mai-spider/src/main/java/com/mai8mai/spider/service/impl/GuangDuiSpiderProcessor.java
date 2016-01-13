@@ -114,6 +114,11 @@ public class GuangDuiSpiderProcessor implements SpiderProcessor {
         return goodsList;
     }
 
+    @Override
+    public List<String> spiderPageUrl(String url) {
+        return null;
+    }
+
     /**
      * 商品详情页处理
      *

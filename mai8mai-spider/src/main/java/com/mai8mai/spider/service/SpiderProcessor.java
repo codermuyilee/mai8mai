@@ -9,4 +9,11 @@ import java.util.List;
  */
 public interface SpiderProcessor {
     public List<Goods> spider(String url);
+
+    /**
+     * 根据主站url获得需要抓取的所有具体的url地址
+     * @param url
+     * @return
+     */
+    public List<String> spiderPageUrl(String url);
 }
