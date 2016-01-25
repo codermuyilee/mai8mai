@@ -35,6 +35,15 @@ public class GoodsAction extends ActionSupport {
         return "goods_list";
     }
 
+    /**
+     * @return the message
+     */
+    @Action(value = "get")
+    public String get() {
+        goods=goodsService.getGoodsById(id);
+        return "goods_page";
+    }
+
     public GoodsService getGoodsService() {
         return goodsService;
     }

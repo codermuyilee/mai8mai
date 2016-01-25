@@ -1,3 +1,8 @@
+
+.goods_img_div{
+	text-align: center;
+	margin-top: 20px;
+}
 /*********
  * Fonts *
  *********/
@@ -1329,7 +1334,7 @@ a.more:hover{text-decoration: underline!important;}
 	font:normal 13px/13px Segoeui, Arial, Verdana, serif;
 	margin: 0;
 }
-.listing_product .product_li .cart a.bay{
+a.bay{
 	display: block;
 	width: 120px;
 	height: 35px;
@@ -1337,7 +1342,7 @@ a.more:hover{text-decoration: underline!important;}
 	text-align: center;
 	text-decoration: none;
 	font:bold 13px/35px Segoeui-Bold, Arial, Verdana, serif;
-	margin: 0 0 28px 0;
+	margin: 30px 0 28px 430px;
 	background: #59b7c2;
 	border-radius: 2px;
 	-moz-border-radius: 2px;
@@ -1429,8 +1434,7 @@ a.more:hover{text-decoration: underline!important;}
  * Product page *
  ****************/
 .product_page{
-	margin: 41px -12px 0;
-	width: 756px;
+	margin: 41px -1px;
 }
 .product_page .img_slid .sale {margin: -3px 0 0 -3px;}
 .product_page .img_slid .preview{

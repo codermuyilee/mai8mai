@@ -5,7 +5,7 @@
       <div class="grid_12">
         <nav class="primary">
           <ul>
-            <li class="curent"><a href="index.html">首页</a></li>
+            <li class="curent"><a href="home.action">首页</a></li>
             <li><a href="catalog_grid.html">好货晒单</a></li>
             <li><a href="catalog_grid.html">神价监控</a></li>
           </ul>
@@ -163,7 +163,7 @@
 			  <#list goodsList as goods>
                   <div class="grid_3 product">
                       <div class="prev">
-                          <a href="product_page.html"><img src="${imagePath}/${goods.pic}" alt="" title="" /></a>
+                          <a href="get.action?id=${goods.id}"><img src="${imagePath}/${goods.pic}" alt="" title="" /></a>
                       </div><!-- .prev -->
                       <h3 class="title">${goods.name}</h3>
                       <div class="cart">

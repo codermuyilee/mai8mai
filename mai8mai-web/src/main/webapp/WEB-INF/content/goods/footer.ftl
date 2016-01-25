@@ -49,24 +49,6 @@
         <div class="clear"></div>
       </div><!-- .container_12 -->
     </div><!-- .f_navigation -->
-
-    <div class="f_info">
-      <div class="container_12">
-        <div class="grid_6">
-          <p class="copyright">© Breeze Store Theme, 2013. Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a> - More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a></p>
-        </div><!-- .grid_6 -->
-
-        <div class="grid_6">
-          <div class="soc">
-            <a class="google" href="#"></a>
-            <a class="twitter" href="#"></a>
-            <a class="facebook" href="#"></a>
-          </div><!-- .soc -->
-        </div><!-- .grid_6 -->
-
-        <div class="clear"></div>
-      </div><!-- .container_12 -->
-    </div><!-- .f_info -->
   </footer>
 
 </body>
