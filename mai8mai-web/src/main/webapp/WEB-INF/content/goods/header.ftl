@@ -5,23 +5,23 @@
 <html>
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
 
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+    <title>Home</title>
 
-  <title>Home</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="${contextPath}/css/style.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="${contextPath}/css/grid.css" media="screen" rel="stylesheet" type="text/css">
 
-  <link rel="shortcut icon" href="favicon.ico">
-  <link href="${contextPath}/css/style.css" media="screen" rel="stylesheet" type="text/css">
-  <link href="${contextPath}/css/grid.css" media="screen" rel="stylesheet" type="text/css">
+    <script src="${contextPath}/js/jquery-1.7.2.min.js"></script>
+    <script src="${contextPath}/js/html5.js"></script>
+    <script src="${contextPath}/js/jflow.plus.js"></script>
+    <script src="${contextPath}/js/jquery.carouFredSel-5.2.2-packed.js"></script>
+    <script src="${contextPath}/js/cart.js"></script>
 
-  <script src="${contextPath}/js/jquery-1.7.2.min.js" ></script>
-  <script src="${contextPath}/js/html5.js" ></script>
-  <script src="${contextPath}/js/jflow.plus.js" ></script>
-  <script src="${contextPath}/js/jquery.carouFredSel-5.2.2-packed.js"></script>
-
-  <script>
+    <script>
 	$(document).ready(function(){
 	    $("#myController").jFlow({
 			controller: ".control", // must be class, use . sign
@@ -60,6 +60,22 @@
        })
   </script>
 
+    <script>
+        //回到顶部
+        $(function() {
+            $(window).scroll(function() {
+                if($(this).scrollTop() != 0) {
+                    $("#toTop").fadeIn();
+                } else {
+                    $("#toTop").fadeOut();
+                }
+            });
+            $("body").append("<div id=\"toTop\" style=\"border:1px solid #444;background:#333;color:#fff;text-align:center;padding:10px 13px 7px 13px;position:fixed;bottom:10px;right:10px;cursor:pointer;display:none;font-family:verdana;font-size:22px;\">^</div>");
+            $("#toTop").click(function() {
+                $("body,html").animate({scrollTop:0},800);
+            });
+        });
+    </script>
 </head>
 <body>
   <div class="container_12">
@@ -80,7 +96,7 @@
       <div class="grid_6">
         <ul id="cart_nav">
           <li>
-            <a class="cart_li" href="#">想买<span>$0.00</span></a>
+            <a class="cart_li" href="#">想买</a>
             <ul class="cart_cont">
               <li class="no_border"><p>Recently added item(s)</p></li>
               <li>

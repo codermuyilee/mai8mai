@@ -50,7 +50,7 @@
         <div class="grid_12">
             <nav class="primary">
                 <ul>
-                    <li class="curent"><a href="home.action">首页</a></li>
+                    <li class="curent"><a href="/goods/home.action">首页</a></li>
                     <li><a href="#">好货晒单</a></li>
                     <li><a href="#">神价监控</a></li>
                 </ul>
@@ -86,8 +86,8 @@
 
             <div class="options">
                 <div class="grid-list">
-                    <a class="grid curent" href="home.action"><span>img</span></a>
-                    <a class="list" href="list_v.action"><span>img</span></a>
+                    <a class="grid curent" href="/goods/home.action"><span>img</span></a>
+                    <a class="list" href="/goods/list_v.action"><span>img</span></a>
                 </div>
             </div>
             <!-- .options -->
@@ -129,7 +129,7 @@
                             </div>
                             <a href="#" class="bay">点我去买</a>
                             <a href="#" class="obn"></a>
-                            <a href="#" class="like"></a>
+                            <a href="#" class="like" onclick="addToCart(1)" ></a>
                         </div>
                         <!-- .cart -->
                     </div>
@@ -164,7 +164,6 @@
         <div class="clear"></div>
 
     </div>
-    <!-- .container_12 -->
 </section><!-- #main -->
 
 <div class="clear"></div>

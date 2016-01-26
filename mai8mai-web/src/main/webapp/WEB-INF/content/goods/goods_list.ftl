@@ -1,11 +1,13 @@
 <#include "layout.ftl">
 <@layout>
+
+
   <div id="block_nav_primary">
     <div class="container_12">
         <div class="grid_12">
             <nav class="primary">
                 <ul>
-                    <li class="curent"><a href="home.action">首页</a></li>
+                    <li class="curent"><a href="/goods/home.action">首页</a></li>
                     <li><a href="#">好货晒单</a></li>
                     <li><a href="#">神价监控</a></li>
                 </ul>
@@ -34,8 +36,8 @@
 	      
 	      <div class="options">
 		     <div class="grid-list">
-			   <a class="grid curent" href="home.action"><span>img</span></a>
-			   <a class="list" href="list_v.action"><span>img</span></a>
+                 <a class="grid curent" href="/goods/home.action"><span>img</span></a>
+                 <a class="list" href="/goods/list_v.action"><span>img</span></a>
 		     </div><!-- .grid-list -->
 	      </div><!-- .options -->
 	      
