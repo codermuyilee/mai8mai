@@ -6,8 +6,8 @@
         <nav class="primary">
           <ul>
             <li class="curent"><a href="home.action">首页</a></li>
-            <li><a href="catalog_grid.html">好货晒单</a></li>
-            <li><a href="catalog_grid.html">神价监控</a></li>
+            <li><a href="#">好货晒单</a></li>
+            <li><a href="#">神价监控</a></li>
           </ul>
         </nav><!-- .primary -->
       </div><!-- .grid_12 -->
@@ -28,135 +28,15 @@
   
   <section id="main">
     <div class="container_12">
-       <div id="sidebar" class="grid_3">
-	      <aside id="categories_nav">
-		     <h3>Categories</h3>
-		     
-		     <nav class="left_menu">
-			    <ul>
-				   <li><a href="#">Solids <span>(21)</span></a></li>
-				   <li><a href="#">Liquids <span> (27)</span></a></li>
-				   <li><a href="#">Spray <span>(33)</span></a></li>
-				   <li><a href="#">Electric <span>(17)</span></a></li>
-				   <li><a href="#">For Cars <span>(23)</span></a></li>
-				   <li><a href="#">For Room <span>(7)</span></a></li>
-				   <li class="last"><a href="#">Other <span>(135)</span></a></li>
-			    </ul>
-		     </nav><!-- .left_menu -->
-	      </aside><!-- #categories_nav -->
-	      
-	      <aside id="shop_by">
-		     <h3>Shop By</h3>
-		     
-		     <div class="currently_shopping">
-			    <p>Currently Shopping by:</p>
-			    <ul>
-				   <li><a title="close" class="close" href="#"></a>Price: <span>$0.00 - $999.99</span></li>
-				   <li><a title="close" class="close" href="#"></a>Manufacturer: <span>Apple</span></li>
-			    </ul>
-			    
-			    <a class="clear_all" href="#">Clear All</a>
-			    
-			    <div class="clear"></div>
-		     </div><!-- .currently_shopping -->
-		     
-		     <h4>Category</h4>
-		     
-		     <form action="#" class="check_opt">
-			    <p><input class="niceCheck" type="checkbox" >For Home (23)</p>
-			    <p><input class="niceCheck" type="checkbox" name="" value="">For Car (27)</p>
-			    <p><input class="niceCheck" type="checkbox" name="" value="">For Office (9)</p>
-		     </form>
-		     
-		     <h4>Price</h4>
-		     
-		     <form action="#" class="check_opt">
-			    <p><input class="niceCheck" type="checkbox" name="" value="">0.00 - $49.99 (21)</p>
-			    <p><input class="niceCheck" type="checkbox" name="" value="">$50.00 - $99.99 (7)</p>
-			    <p><input class="niceCheck" type="checkbox" name="" value="">0$100.00 and above (15)</p>
-		     </form>
-	      </aside><!-- #shop_by -->
-	      
-	      <aside id="specials" class="specials">
-		     <h3>Specials</h3>
-		     
-		     <ul>
-			    <li>
-				   <div class="prev">
-					  <a href="product_page.html"><img src="${contextPath}/images/special1.png" alt="" title="" /></a>
-				   </div>
-				   
-				   <div class="cont">
-					  <a href="product_page.html">Honeysuckle Flameless Luminary Refill</a>
-					  <div class="prise"><span class="old">$177.00</span>$75.00</div>
-				   </div>   
-			    </li>
-			    
-			    <li>
-				   <div class="prev">
-					  <a href="product_page.html"><img src="${contextPath}/images/special2.png" alt="" title="" /></a>
-				   </div>
-				   
-				   <div class="cont">
-					  <a href="product_page.html">Honeysuckle Flameless Luminary Refill</a>
-					  <div class="prise"><span class="old">$177.00</span>$75.00</div>
-				   </div>   
-			    </li>
-		     </ul>
-	      </aside><!-- #specials -->
-	      
-	      <aside id="newsletter_signup">
-		     <h3>Newsletter Signup</h3>
-		     <p>Phasellus vel ultricies felis. Duis 
-		     rhoncus risus eu urna pretium.</p>
-		     
-		     <form class="newsletter">
-			    <input type="email" name="newsletter" class="your_email" value="" placeholder="Enter your email address..."/>
-			    <input type="submit" id="submit" value="Subscribe" />
-		     </form>
-	      </aside><!-- #newsletter_signup -->
-       </div><!-- .sidebar -->
-      
-       <div id="content" class="grid_9">
+
+       <div id="content" class="grid_12">
 	      <h1 class="page_title">每日精选</h1>
 	      
 	      <div class="options">
 		     <div class="grid-list">
 			   <a class="grid curent" href="index.html"><span>img</span></a>
-			   <a class="list" href="catalog_list.html"><span>img</span></a>
+			   <a class="list" href="goods/list_v.action"><span>img</span></a>
 		     </div><!-- .grid-list -->
-		     
-		     <div class="show">
-			    Show
-			    <select>
-				   <option>1</option>
-				   <option>2</option>
-				   <option>3</option>
-				   <option>4</option>
-				   <option>5</option>
-				   <option>6</option>
-				   <option>7</option>
-				   <option>8</option>
-				   <option>9</option>
-				   <option>10</option>
-				   <option>11</option>
-				   <option>12</option>
-			     </select>
-			    
-			    per page
-		     </div><!-- .show -->
-		     
-		     <div class="sort">
-			   Sort By
-			    <select>
-				   <option>Position</option>
-				   <option>Price</option>
-				   <option>Rating</option>
-				   <option>Name</option>
-			     </select>
-			    
-			    <a class="sort_up" href="#">&#8593;</a>
-		     </div><!-- .sort -->
 	      </div><!-- .options -->
 	      
 	      <div class="grid_product">
