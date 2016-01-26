@@ -35,6 +35,16 @@ public class GoodsAction extends ActionSupport {
         return "goods_list";
     }
 
+
+    /**商品列表，竖向视图
+     * @return the message
+     */
+    @Action(value = "list_v")
+    public String list_v() {
+        goodsList=goodsService.getGoodsByPage(page);
+        return "goods_list_v";
+    }
+
     /**
      * @return the message
      */

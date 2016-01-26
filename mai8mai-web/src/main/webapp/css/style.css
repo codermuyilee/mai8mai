@@ -1248,12 +1248,12 @@ h1.post_title{
 
 .grid_product{
 	margin: 42px -12px 10px;
-	width: 756px;
+	width: 1156px;
 }
 .grid_product .product{margin-bottom: 32px;}
 .listing_product{
 	margin: 42px -1px 10px;
-	width: 734px;
+	width: 990px;
 }
 .listing_product .product_li{
 	margin-bottom: 32px;
@@ -1291,6 +1291,23 @@ h1.post_title{
 	height: 204px;
 	border-right: 1px solid #e0e0e0;
 }
+
+.listing_product .product_li .entry_content .goods_detail{
+	position:relative;
+	line-height:1.4em;
+	height:4.2em;
+	overflow:hidden;
+}
+
+.listing_product .product_li .entry_content .goods_detail::after{
+	font-weight:bold;
+	position:absolute;
+	bottom:0;
+	right:0;
+	padding:0 20px 1px 45px;
+}
+
+
 .listing_product .product_li .entry_content a{text-decoration: none;}
 .listing_product .product_li .entry_content h3.title{
 	font:normal 13px/20px Bitter, Arial, Verdana, serif;
@@ -1343,6 +1360,22 @@ a.bay{
 	text-decoration: none;
 	font:bold 13px/35px Segoeui-Bold, Arial, Verdana, serif;
 	margin: 30px 0 28px 430px;
+	background: #59b7c2;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-khtml-border-radius: 2px;
+	behavior: url(PIE.htc);
+}
+
+.listing_product .product_li .cart a.bay{
+	display: block;
+	width: 120px;
+	height: 35px;
+	color: #fefefe;
+	text-align: center;
+	text-decoration: none;
+	font:bold 13px/35px Segoeui-Bold, Arial, Verdana, serif;
+	margin: 60px 0 28px 0px;
 	background: #59b7c2;
 	border-radius: 2px;
 	-moz-border-radius: 2px;
