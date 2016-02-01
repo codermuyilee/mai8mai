@@ -1,9 +1,6 @@
 package com.mai8mai.core.dao.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
-import javax.persistence.Temporal;
+import javax.persistence.*;
 import java.util.Date;
 
 import static javax.persistence.TemporalType.TIMESTAMP;
@@ -75,7 +72,7 @@ public class Goods extends BaseModel {
     public void setSyncTime(Date syncTime) {
         this.syncTime = syncTime;
     }
-    @Column(name="detail")
+    @Column(name="detail",length = 3000)
     public String getDetail() {
         return detail;
     }
@@ -156,4 +153,6 @@ public class Goods extends BaseModel {
     public void setCurrentPrice(Float currentPrice) {
         this.currentPrice = currentPrice;
     }
+
+
 }

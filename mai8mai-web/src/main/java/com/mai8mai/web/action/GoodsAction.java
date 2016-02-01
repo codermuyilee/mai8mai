@@ -14,6 +14,7 @@ import java.util.List;
 @Results({@Result(name = "success", location = "/msg.jsp"),
         @Result(name = "error", location = "/error.jsp")})
 @ExceptionMappings({@ExceptionMapping(exception = "java.lange.RuntimeException", result = "error")})
+@Namespace("/goods")
 public class GoodsAction extends ActionSupport {
 
     final static private Logger logger = LoggerFactory.getLogger(GoodsAction.class);

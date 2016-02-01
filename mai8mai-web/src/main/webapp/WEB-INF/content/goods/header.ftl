@@ -19,6 +19,7 @@
     <script src="${contextPath}/js/html5.js"></script>
     <script src="${contextPath}/js/jflow.plus.js"></script>
     <script src="${contextPath}/js/jquery.carouFredSel-5.2.2-packed.js"></script>
+    <script src="${contextPath}/js/jquery.cookie.js"></script>
     <script src="${contextPath}/js/cart.js"></script>
 
     <script>

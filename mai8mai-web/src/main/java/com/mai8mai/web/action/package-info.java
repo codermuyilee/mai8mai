@@ -1,6 +1,5 @@
 @ParentPackage("struts-default")
 
-@Namespace("/goods")
 
 package com.mai8mai.web.action;
 
